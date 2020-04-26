@@ -10,4 +10,5 @@ function itemIsPresent(array, item) {
 // Test case
 const myArray = ['bacon', 'purple', 'door', 'window', 'exist', 'code', 'program', 'funky'];
 
-console.log(myArray, 'funky');
+console.log(itemIsPresent(myArray, 'funky')); // true
+console.log(itemIsPresent(myArray, 'elephant')); // false
