@@ -9,8 +9,7 @@
 // For example: greetLong(["bob", "daniel"]) returns ["Hello daniel"]
 
 function greetLong(lst) {
-  let greeted = lst.filter(name => name.length > 4);
-  return greeted.map(name => 'Hello '.concat(name));
+  return lst.filter(name => name.length > 4).map(name => 'Hello '.concat(name));
 }
 // -------------------------------------------------------------------------
 console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
