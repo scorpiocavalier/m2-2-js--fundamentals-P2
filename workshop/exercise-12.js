@@ -6,7 +6,7 @@
 // <70 	is D
 // <80 	is C
 // <90 	is B
-// <= 100 is A
+// < 100 is A
 
 // Write function here
 const averageGrade = grades => {
@@ -21,7 +21,7 @@ const averageGrade = grades => {
         grade = 'C';
     else if(average < 90)
         grade = 'B';
-    else if(average <= 100)
+    else if(average < 100)
         grade = 'A';
     else
         grade = 'PERFECT CLASS';
