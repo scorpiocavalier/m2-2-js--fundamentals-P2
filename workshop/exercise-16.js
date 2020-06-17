@@ -10,6 +10,16 @@
 
 let armstrongNumbers = [];
 
-// write your loop here...
+for(let num=0; num<=999; num++) {
+    
+    let sumOfCubes = 0;
+    let strNum = num.toString();
+
+    for(let i=0; i<strNum.length; i++)
+        sumOfCubes += Math.pow(strNum[i].valueOf(), 3);
+
+    if(sumOfCubes === num)
+        armstrongNumbers.push(num);
+}
 
 console.log(armstrongNumbers);
