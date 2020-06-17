@@ -3,7 +3,7 @@
 // You can use for loops to implement your logic
 
 // Q19
-// - filter(lst, func) returns a list with all the elements of lst that does not satisfy f removed
+// - filter(lst, func) returns a list with all the elements of lst that satisfy func
 // - filter(lst, func) has fewer elements than lst
 // - if lst_ = filter(lst, f) and x is an element of lst_ it means that:
 //      x is an element of lst
@@ -14,8 +14,13 @@
 // filter([1, 2, 3, 4, 5], isEven) returns [2,4];
 
 function filter(lst, func) {
-  // lst is an array and f is a function
-  // func takes one argument and returns a boolean (true or false)
+  
+  let new_lst = [];
+
+  for(let i=0; i<lst.length; i++)
+    keepLong(lst[i]) && new_lst.push(lst[i]);
+
+  return new_lst;
 }
 // -------------------------------------------------------------------------
 function keepLong(str) {
